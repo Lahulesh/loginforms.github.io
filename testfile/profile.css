@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(#141e30, #243b55);
+    color: #fff;
+}
+
+* :hover {
+    color: none!important;
+    background-color: none!important;
+}
+
+.nav a {
+    text-emphasis: none!important;
+    color: none!important;
+    background-color: none!important;
+    text-decoration: none!important;
+}
+
+a {
+    text-emphasis: none!important;
+    color: none!important;
+    background-color: none!important;
+    text-decoration: none!important;
+}
+
+.nav a:hover {
+    color: none!important;
+    background-color: none!important;
+}
+
+.nav {
+    background-image: linear-gradient(#141e30, #243b55);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+
+.nav .icon {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.nav .icon i {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.nav .icon p {
+    font-size: 12px;
+}
+
+.active {
+    color: #03e9f4 !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.space {
+    margin-top: 100px;
+}
+
+
+/* test */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    background-image: linear-gradient(#141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-bio {
+    padding: 3rem 3rem 8rem 3rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+}
+
+.card-bio .name {
+    color: #03e9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Dosis", serif;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #03e9f4;
+}
+
+.person-info {
+    width: 60%;
+    font-family: "Dosis", serif;
+    color: #fff;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.person-info h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.person-info p {
+    font-size: 1.8rem;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: -20px;
+    right: 80px;
+    width: 90px;
+    height: 35px;
+    background-color: #03e9f4;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    font-family: "Dosis", serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.change .card-btn {
+    width: 13%;
+    right: 3px;
+    bottom: -4rem;
+    border-radius: 50%;
+}
+
+.card-btn-contact {
+    transition: all 0.5s 0.1s;
+}
+
+.card-btn-contact,
+.card-btn i {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change .card-btn-contact {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s;
+}
+
+.card-btn i {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .card-btn i {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.card-contact {
+    background-color: #03e9f4;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+
+.change .card-contact {
+    transform: translateY(0);
+}
+
+.card-contact h4 {
+    font-family: "Dosis", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.change .card-contact h4 {
+    transform: scale(1);
+}
+
+.card-social {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 50px;
+    height: 75px;
+    border: 1px solid #03e9f4;
+}
+
+.profile {
+    transition: all 0.5s 0.5s;
+}
+
+.privacy {
+    transition: all 0.5s 1.0s;
+}
+
+.extra {
+    transition: all 0.5s 1.5s;
+}
+
+.upload {
+    transition: all 0.5s 2.0s;
+}
+
+.logout {
+    transition: all 0.5s 2.5s;
+}
+
+.change .card-social {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+
+/* .privacy .icon-wrapper {
+    background-color: #3b5998;
+}
+
+.linkedin .icon-wrapper {
+    background-color: #007bb6;
+} */
+
+.icon-wrapper i {
+    font-size: 30px;
+    color: white;
+}
+
+.fa-arrow-right {
+    font-size: 30px;
+    color: white;
+}
+
+.contact-details h4 {
+    font-family: "Dosis", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.card-social h4 {
+    color: white;
+}
+
+.contact-details p {
+    font-family: "Dosis", serif;
+    font-size: 1.4rem;
+    color: #444;
+    letter-spacing: 0.1rem;
+}
+
+.card-social span {
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #999;
+}
+
+
+/* test */
